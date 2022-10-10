@@ -1,0 +1,91 @@
+.section {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    color: #333;
+    width: fit-content;
+}
+
+.section,
+.section>* {
+    border-radius: 40px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+.title {
+    font-weight: 600;
+    /* background-color: #fff; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.space {
+    height: 20px;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.password {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+
+.button_span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(137, 100%, 65%);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    top: -10px;
+    transition: transform .2s ease-in-out;
+}
+
+.button_span:active {
+    transform: translateY(10px);
+}
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: hsl(137, 79%, 31%);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+}

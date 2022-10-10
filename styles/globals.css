@@ -1,0 +1,66 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+.form-signin {
+  width: fit-content;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(180deg,
+      hsl(227deg 51% 33%) 0%,
+      hsl(209deg 100% 32%) 10%,
+      hsl(206deg 100% 37%) 18%,
+      hsl(202deg 100% 41%) 26%,
+      hsl(197deg 100% 42%) 34%,
+      hsl(189deg 100% 41%) 42%,
+      hsl(178deg 100% 39%) 52%,
+      hsl(164deg 100% 43%) 63%,
+      hsl(151deg 100% 47%) 77%,
+      hsl(137deg 100% 51%) 100%);
+  background-repeat: no-repeat;
+}
+
+body > * {
+  height: 100%;
+}
+
+main {
+  height: 80%;
+  display: grid;
+  place-items: center;
+}
