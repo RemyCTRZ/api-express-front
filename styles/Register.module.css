@@ -11,3 +11,12 @@
 .form>* {
     margin-bottom: 1rem;
 }
+
+.btn {
+    border: none;
+    background-color: #03FB58;
+    border-radius: 5rem;
+    width: 100%;
+    font-size: 1.4em;
+    color: #fff;
+}

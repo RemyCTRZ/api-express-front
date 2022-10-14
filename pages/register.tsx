@@ -49,7 +49,7 @@ const Register = () => {
                     onChange={e => setPassword(e.target.value)}
                 />
 
-                <button className="w-100 btn btn-lg btn-primary" type="submit">S&apos;inscrire</button>
+                <button className={Style.btn} type="submit">S&apos;inscrire</button>
             </form>
         </Layout>
     );

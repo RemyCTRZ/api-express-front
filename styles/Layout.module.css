@@ -12,6 +12,8 @@
 }
 
 .navbar_list {
+    display: flex;
+    gap: 2rem;
     list-style-type: none;
 }
 

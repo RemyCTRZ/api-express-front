@@ -12,7 +12,7 @@ const Login = () => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        const userLogged = await fetch('http://localhost:3001/user/login', {
+        const userLogged = await fetch('http://localhost:3001/users/login', {
             method: "POST",
             mode: "cors",
             headers: { 'Content-Type': 'application/json' },

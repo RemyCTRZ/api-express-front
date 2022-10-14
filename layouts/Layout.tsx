@@ -9,8 +9,8 @@ const Layout = (props) => {
     const [cookies, setCookies, removeCookies] = useCookies(["cookie"])
     const [isConnected, setIsConnected] = useState(false)
 
-    const logout = () => {
-        removeCookies(["cookie"])
+    const logout = async () => {
+        await removeCookies(["cookie"])
         window.location.replace('/login')
     }
 
@@ -28,11 +28,15 @@ const Layout = (props) => {
         <>
             <nav className={Style.navbar}>
                 <div className={Style.container}>
-                    <Link href="/">
-                        <a href="#" className={Style.navbar_link} >Profil</a>
-                    </Link>
+                    {isConnected ? (
+                        <Link href="/">
+                            <a href="#" className={Style.navbar_link} >Profil</a>
+                        </Link>
+                    ) : (
+                        <p></p>
+                    )}
                     <div className={Style.right_navlinks}>
-                        {!isUserConnected ? (
+                        {!isConnected ? (
                             <ul className={Style.navbar_list}>
                                 <li className={Style.navbar_item}>
                                     <Link href="/login">

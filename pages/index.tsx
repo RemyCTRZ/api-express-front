@@ -1,5 +1,5 @@
 import Layout from "../layouts/Layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from '../styles/Index.module.css'
 import { useCookies } from "react-cookie";
 
@@ -23,7 +23,7 @@ export default function Home() {
     if (cookies.cookie) {
       let continu
       let options = setHeaders(cookies.cookie)
-      
+
 
     }
 
